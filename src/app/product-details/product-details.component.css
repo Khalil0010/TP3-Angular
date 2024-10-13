@@ -1,0 +1,92 @@
+.product {
+  background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+  border-radius: 12px; /* Bords arrondis */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre portée plus marquée */
+  overflow: hidden; /* Masquer les débordements */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition douce pour l'animation */
+  margin: 20px; /* Marge autour du produit */
+  display: flex;
+  flex-direction: column; /* Flexbox pour disposition verticale */
+}
+
+.product:hover {
+  transform: translateY(-8px); /* Élévation plus marquée au survol */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Ombre portée plus forte au survol */
+}
+
+.product-details {
+  display: flex; /* Flexbox pour la mise en page des détails */
+  padding: 20px; /* Espacement intérieur */
+  background: linear-gradient(135deg, #eaeaea, #ffffff); /* Dégradé de fond */
+}
+
+.product img {
+  width: 150px; /* Largeur fixe de l'image */
+  height: auto; /* Hauteur automatique pour le rapport d'aspect */
+  border-radius: 12px; /* Bord arrondi pour l'image */
+  margin-right: 20px; /* Marge à droite de l'image */
+  transition: transform 0.3s; /* Transition douce pour l'image */
+}
+
+.product img:hover {
+  transform: scale(1.05); /* Légère augmentation de la taille de l'image au survol */
+}
+
+.product-info {
+  flex: 1; /* Prendre l'espace restant */
+}
+
+.name {
+  font-size: 1.5rem; /* Taille de police pour le nom du produit */
+  font-weight: bold; /* Mettre le texte en gras */
+  color: #222; /* Couleur de texte gris très foncé */
+  text-transform: uppercase; /* Mettre en majuscules */
+}
+
+.description {
+  font-size: 1rem; /* Taille de police pour la description */
+  color: #666; /* Couleur de texte gris moyen */
+  margin: 5px 0; /* Marges verticale */
+}
+
+.category {
+  font-size: 0.9rem; /* Taille de police pour la catégorie */
+  color: #999; /* Couleur de texte gris clair */
+}
+
+.price {
+  padding: 20px; /* Espacement intérieur */
+  border-top: 2px solid black; /* Bord supérieur bleu */
+  display: flex; /* Flexbox pour aligner le contenu */
+  justify-content: flex-end; /* Alignement du contenu à droite */
+  text-align: right; /* Alignement du texte à droite */
+}
+
+.price .original-price {
+  text-decoration: line-through; /* Barré pour le prix original */
+  color: #b0b0b0; /* Couleur grise pour le prix barré */
+  margin-right: 10px; /* Marge à droite du prix barré */
+  font-size: 1rem; /* Taille de police pour le prix barré */
+}
+
+.price .current-price {
+  font-size: 1.6rem; /* Taille de police pour le prix */
+  color: black; /* Couleur rose vif pour le prix */
+  font-weight: bold; /* Mettre le prix en gras */
+}
+
+.cta {
+  background-color: black; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte blanche */
+  border: none; /* Pas de bordure */
+  padding: 12px 24px; /* Espacement intérieur */
+  border-radius: 5px; /* Bords arrondis pour le bouton */
+  cursor: pointer; /* Curseur pointer sur hover */
+  transition: background-color 0.3s, transform 0.3s; /* Transition douce pour l'animation */
+  margin-top: 10px; /* Marge supérieure */
+}
+
+.cta:hover {
+  background-color: #0056b3; /* Couleur plus foncée au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille du bouton au survol */
+}

@@ -1,0 +1,16 @@
+<div class="product">
+  <div class="product-details">
+    <img [src]="getImageUrl(product)" [alt]="product.name" />
+    <div class="product-info">
+      <div class="name">{{product.name}}</div>
+      <div class="description">{{product.description}}</div>
+      <div class="category">Part Type: {{product.category}}</div>
+    </div>
+  </div>
+  <div class="price">
+    <div *ngIf="product.discount > 0" class="original-price">{{product.price | currency}}</div>
+    <div *ngIf="product.discount > 0" class="current-price">{{(product.price * (1 - product.discount)) | currency}}</div>
+    <div *ngIf="product.discount === 0" class="current-price">{{product.price | currency}}</div>
+  </div>
+  <button class="cta" (click)="buyButtonClicked (product)">Buy</button>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="filters">
+    <a class="button" (click)="filter='cheesecake'">Cheesecakes</a>
+    <a class="button" (click)="filter='fruitpies'">Fruit Pies</a>
+    <a class="button" (click)="filter='nut-based-pies'">Nut-based Pies</a>
+    <a class="button" (click)="filter='specialty pies'">Specialty Pies</a>
+    <a class="button" (click)="filter=''">All</a>
+  </div>
+
+  <ul class="products">
+    <li class="product-item" *ngFor="let product of getFilteredProducts()">
+      <app-product-details [product]="product" (buy)="addToCart(product)"></app-product-details>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px; /* Largeur maximale pour le conteneur */
+  margin: 0 auto; /* Centrer le conteneur */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #f4f4f4; /* Couleur de fond claire */
+  border-radius: 12px; /* Bords arrondis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around; /* Distribution uniforme des boutons */
+  padding: 15px; /* Espacement intérieur */
+  background: linear-gradient(135deg, #FF6F61, #6F86D6); /* Dégradé coloré futuriste */
+  border-radius: 8px; /* Bords arrondis pour le conteneur de filtres */
+  margin-bottom: 20px; /* Marge inférieure */
+}
+
+.button {
+  background-color: transparent; /* Fond transparent pour un look élégant */
+  color: #fff; /* Couleur du texte blanche */
+  border: 2px solid transparent; /* Bord transparent par défaut */
+  padding: 10px 20px; /* Espacement intérieur */
+  border-radius: 25px; /* Bords très arrondis */
+  cursor: pointer; /* Curseur pointer sur hover */
+  font-weight: bold; /* Texte en gras pour un impact visuel */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transition douce */
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond au survol */
+  color: #FF6F61; /* Couleur du texte au survol */
+  border: 2px solid #FF6F61; /* Bord coloré au survol */
+}
+
+.products {
+  margin: 0; /* Enlever la marge */
+  padding: 0; /* Enlever le padding */
+  border-top: 2px solid #ccc; /* Bord supérieur gris clair */
+  list-style-type: none; /* Enlever les puces de la liste */
+}
+
+.product-item {
+  padding: 20px; /* Espacement intérieur pour chaque produit */
+  border-bottom: 2px solid #ccc; /* Bord inférieur gris clair */
+  transition: transform 0.3s, background-color 0.3s; /* Transition douce pour l'animation */
+  background-color: #fff; /* Couleur de fond blanche pour les produits */
+  border-radius: 8px; /* Bords arrondis pour chaque produit */
+}
+
+.product-item:hover {
+  transform: translateY(-5px); /* Élévation légère au survol */
+  background-color: #f0f0f0; /* Changement de couleur au survol */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
+}

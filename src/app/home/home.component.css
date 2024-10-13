@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box; /* Better control over box sizing */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  background-color: #e8f0fe; /* Light background */
+  color: #333; /* Text color */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  padding: 20px; /* Internal spacing */
+}
+
+.hero {
+  height: 250px; /* Increased height for visual impact */
+  width: 100%; /* Full width */
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Cover the section */
+  border-radius: 20px; /* More rounded corners */
+  margin-bottom: 30px; /* Increased bottom margin */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.promoted {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  text-align: center; /* Center text */
+  background-color: #f7f7f7; /* Light gray background for distinction */
+  border-radius: 20px; /* More rounded corners */
+  padding: 30px; /* Increased internal spacing */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-bottom: 30px; /* Increased bottom margin */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.promoted:hover {
+  transform: scale(1.03); /* Scaling effect on hover */
+}
+
+.promo-main-text {
+  font-size: 2.5rem; /* Increased size for main text */
+  color: #ffd182;; /* Bright orange color */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px; /* Bottom margin */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+.promo-sub-text {
+  font-size: 1.2rem; /* Secondary text size */
+  color: #666; /* Medium gray color */
+}
+
+.robot-parts-cta {
+  display: flex;
+  justify-content: space-around; /* Uniform spacing */
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 30px 0; /* Increased vertical margin */
+  width: 100%; /* Full width */
+}
+
+.part {
+  display: flex;
+  flex-direction: column; /* Vertical layout for images and text */
+  align-items: center; /* Center content */
+  text-align: center; /* Center text */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Internal spacing */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.part:hover {
+  transform: translateY(-10px) scale(1.05); /* Elevation and scaling on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.white-paper {
+  display: flex;
+  align-items: center; /* Center content */
+  background-color: #ffffff; /* White background */
+  border-radius: 20px; /* More rounded corners */
+  padding: 30px; /* Increased internal spacing */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-top: 30px; /* Increased top margin */
+  border: 1px solid #e0e0e0; /* Subtle border for definition */
+  background: linear-gradient(to bottom right, #ffffff, #f0f8ff); /* Subtle gradient background */
+}
+
+.white-paper img {
+  width: 180px; /* Adjusted width for image */
+  height: auto; /* Automatic height for aspect ratio */
+  margin-right: 20px; /* Right margin for image */
+}
+
+.text {
+  flex: 1; /* Take remaining space */
+}
+
+.header-text {
+  font-size: 2rem; /* Header text size */
+  font-weight: bold; /* Bold text */
+  color: #ffd182;; /* Bright orange color */
+  text-align: center; /* Center align text */
+}
+
+.sub-text {
+  font-size: 1rem; /* Secondary text size */
+  color: #666; /* Medium gray color */
+  text-align: center; /* Center align text */
+}
+
+.learn-more {
+  display: inline-block; /* Inline-block display */
+  margin-top: 10px; /* Top margin */
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text color */
+  padding: 12px 24px; /* Increased internal spacing */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  margin-left:43px;
+}
+
+.learn-more:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: scale(1.05); /* Scaling on hover */
+}
+
+.welcome-image {
+  width: 100%; /* Full width of parent */
+  max-width: 300px; /* Maximum width limited to 300px */
+  height: auto; /* Automatic height to maintain aspect ratio */
+  margin: 10px 0; /* Vertical margin */
+  border-radius: 10px; /* Rounded corners for modern look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.categories-image {
+  max-width: 100px; /* Set a more reasonable max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.interface-image{
+  margin-left:660px;
+  margin-top:50px;
+  width: 500px;
+}
